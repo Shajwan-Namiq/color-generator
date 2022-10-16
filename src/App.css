@@ -1,6 +1,12 @@
   .error {
       color: brown;
-      border: 2px brown solid;
+      border: 4px brown solid;
   }
   
-  .color-light {}
+  .color-light {
+      color: white;
+  }
+  
+  #div-style {
+      height: 150px;
+  }

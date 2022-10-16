@@ -14,8 +14,9 @@ const SingleColor = ({ rgb, weight, index, hexColor }) => {
   }, [alert]);
 
   return (
-    <div className="border-2 ">
+    <div className="shadow-lg ">
       <div
+        id="div-style"
         className={`color ${index > 10 && "color-light"}`}
         style={{ backgroundColor: `rgb(${bcg})` }}
         onClick={() => {
@@ -23,9 +24,13 @@ const SingleColor = ({ rgb, weight, index, hexColor }) => {
           navigator.clipboard.writeText(hexValue);
         }}
       >
-        <p>{weight}%</p>
-        <p>{hexValue}</p>
-        {alert && <p className="alert">Copied to clipboard</p>}
+        <div className="flex justify-center ">
+          <div className="m-5 font-bold">
+            <p className="mb-2">{weight}%</p>
+            <p>{hexValue}</p>
+            {alert && <p className="text-green-900 ">Copied </p>}
+          </div>
+        </div>
       </div>
     </div>
   );
