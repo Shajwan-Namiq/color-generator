@@ -51,7 +51,7 @@ try {
       </div>
 
       <div className="px-10 py-20  ">
-        <div className=" grid grid-cols-3 lg:grid-cols-8">
+        <div className=" grid grid-cols-3 lg:grid-cols-7">
           {list.map((color, index) => {
             return (
               <div className="">
